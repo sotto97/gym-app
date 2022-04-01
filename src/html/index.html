@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- For TailwindCSS -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <!-- For fontAwesome -->
+    <link href="/assets/css/all.css" rel="stylesheet" />
+    <link href="/assets/css/fontawesome.css" rel="stylesheet" />
+    <link href="/assets/css/brands.css" rel="stylesheet" />
+    <link href="/assets/css/solid.css" rel="stylesheet" />
+    <title>Gym App</title>
+  </head>
+  <body>
+    <!-- icon -->
+    <!-- <i class="fa-solid fa-circle-plus"></i> -->
+    <!-- body -->
+    <div id="app" class="p-4 text-xl">
+      <section id="home" class="flex">
+        <div class="w-1/2">
+          <h1 class="font-semibold text-2xl">Home</h1>
+        </div>
+        <div class="w-1/2 text-right">
+          <a href="" class="hover:cursor-pointer">
+            <i class="fa-solid fa-circle-user text-2xl hover:text-indigo-500 transition p-1"></i>
+          </a>
+        </div>
+      </section>
+
+      <section class="py-6">
+        <div class="relative">
+          <input type="text" id="search" name="" class="relative w-full bg-gray-200 text-lg rounded-md py-2 pl-10" placeholder="Serach" />
+          <div class="absolute bottom-2 left-3">
+            <i class="fa-solid fa-magnifying-glass text-gray-400 text-lg"></i>
+          </div>
+        </div>
+      </section>
+
+      <section id="workout">
+        <div class="flex">
+          <div class="w-1/2">
+            <h1 class="font-semibold text-2xl">Workouts</h1>
+          </div>
+          <div class="w-1/2 text-right">
+            <button class="text-indigo-500 hover:text-white bg-white hover:bg-indigo-500 transition rounded-md border-2 border-solid py-1 px-4 text-lg">View all</button>
+          </div>
+        </div>
+
+        <div class="overflow-x-auto whitespace-nowrap pt-6">
+          <div class="inline-block h-auto w-6/12">
+            <div class="bg-indigo-100 h-48 rounded-lg mr-2 shadow-xl">
+              <img src="/img/svg/undraw_personal_training_0dqn.svg" class="h-48 mx-auto p-1" alt="" />
+            </div>
+            <p class="font-semibold pt-2 text-lg">Workout</p>
+            <p class="font-semibold pt-2 text-sm text-gray-400">32 Programs</p>
+          </div>
+          <div class="inline-block h-auto w-6/12">
+            <div class="bg-indigo-100 h-48 rounded-lg mr-2 shadow-xl">
+              <img src="/img/svg/undraw_fitness_stats_sht6.svg" class="h-48 mx-auto p-1" alt="" />
+            </div>
+            <p class="font-semibold pt-2 text-lg">Cardio</p>
+            <p class="font-semibold pt-2 text-sm text-gray-400">16 Programs</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="border" class="py-6">
+        <p class="border-solid border-b-2"></p>
+      </section>
+
+      <section id="foryou" class="">
+        <div class="flex">
+          <div class="w-1/2">
+            <h1 class="font-semibold text-2xl">For You</h1>
+          </div>
+          <div class="w-1/2 text-right">
+            <button class="text-indigo-500 hover:text-white bg-white hover:bg-indigo-500 transition rounded-md border-2 border-solid py-1 px-4 text-lg">View all</button>
+          </div>
+        </div>
+
+        <div class="overflow-x-auto whitespace-nowrap pt-6">
+          <div class="inline-block h-auto w-6/12">
+            <div class="bg-indigo-100 h-48 rounded-lg mr-2 shadow-xl">
+              <img src="/img/svg/undraw_personal_trainer_ote3.svg" class="h-48 mx-auto p-2" alt="" />
+            </div>
+            <p class="font-semibold pt-2 text-lg">Personal Training</p>
+          </div>
+          <div class="inline-block h-auto w-6/12">
+            <div class="bg-indigo-100 h-48 rounded-lg mr-2 shadow-xl">
+              <img src="/img/svg/undraw_yoga_re_fved.svg" class="h-48 mx-auto p-1" alt="" />
+            </div>
+            <p class="font-semibold pt-2 text-lg">Yoga</p>
+          </div>
+          <div class="inline-block h-auto w-6/12">
+            <div class="bg-indigo-100 h-48 rounded-lg shadow-xl">
+              <img src="/img/svg/undraw_working_out_-6-psf.svg" class="h-48 mx-auto p-1" alt="" />
+            </div>
+            <p class="font-semibold pt-2 text-lg">Classes</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section id="footer-border" class="py-2">
+      <p class="border-solid border-b-2"></p>
+    </section>
+
+    <footer class="bottom-0 py-4 w-full">
+      <div class="flex">
+        <a href="" class="w-1/4 text-center hover:cursor-pointer">
+          <i class="text-2xl hover:text-indigo-500 fa-solid fa-home"></i>
+        </a>
+        <a href="" class="w-1/4 text-center hover:cursor-pointer">
+          <i class="text-2xl hover:text-indigo-500 fa-solid fa-heart"></i>
+        </a>
+        <a href="" class="w-1/4 text-center hover:cursor-pointer">
+          <i class="text-2xl hover:text-indigo-500 fa-solid fa-location-dot"></i>
+        </a>
+        <a href="" class="w-1/4 text-center hover:cursor-pointer">
+          <i class="text-2xl hover:text-indigo-500 fa-solid fa-gear"></i>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
